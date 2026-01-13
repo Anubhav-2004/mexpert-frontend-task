@@ -1,0 +1,87 @@
+.stories-hero {
+  background: linear-gradient(180deg, #2b5cff, #1b1f4e);
+  padding: 70px 60px 140px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.stories-hero h1 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.story-filters {
+  display: flex;
+  gap: 14px;
+}
+
+.filter {
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.filter.active {
+  background: white;
+  color: black;
+}
+
+.filter.clear {
+  background: #6b6fff;
+}
+
+.stories-container {
+  margin-top: -100px;
+  padding: 0 60px 80px;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.story-card {
+  background: linear-gradient(180deg, #2e3cbf, #121542);
+  border-radius: 22px;
+  padding: 14px;
+}
+
+.story-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-body {
+  margin-top: 14px;
+}
+
+.card-body h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.status-pill {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.status-pill.New {
+  background: #6bbcff;
+}
+
+.status-pill.In\ Progress {
+  background: #ffd24c;
+  color: black;
+}
+
+.status-pill.Completed {
+  background: #4dffb3;
+  color: black;
+}
