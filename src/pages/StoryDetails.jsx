@@ -2,48 +2,50 @@ import "./StoryDetails.css";
 
 const StoryDetails = () => {
   return (
-    <div className="page2-wrapper">
-      <h1 className="story-title">The Lost City of Future Earth</h1>
+    <div className="page2-root">
+      <div className="page2-header">
+        <h1>The Lost City of Future Earth</h1>
 
-      <div className="tab-buttons">
-        <button className="tab active">Word Explorer</button>
-        <button className="tab">Story Adventure</button>
-        <button className="tab">Brain Quest</button>
+        <div className="page2-tabs">
+          <button className="active">Word Explorer</button>
+          <button>Story Adventure</button>
+          <button>Brain Quest</button>
+        </div>
+
+        <p className="page2-subtext">
+          Drag Pictures to the matching Words, light up correct pairs, shake for a retry
+        </p>
       </div>
 
-      <p className="instruction-text">
-        Drag Pictures to the matching Words, light up correct pairs, shake for a retry
-      </p>
-
-      <div className="content-layout">
-        <div className="left-panel">
-          <h3>Correction <span>(Noun)</span></h3>
+      <div className="page2-content">
+        <div className="page2-left">
+          <h3>
+            Correction <span>(Noun)</span>
+          </h3>
 
           <p className="definition">
             The story is about a city where we assume that a city known as reverville
           </p>
 
-          <div className="image-box">
-            <img
-              src="https://ik.imagekit.io/dev24/The_Galactic_Time_Travelers_qOkLSv4b3_ymILsz5_a.png"
-              alt=""
-            />
-          </div>
+          <img
+            src="https://ik.imagekit.io/dev24/The_Galactic_Time_Travelers_qOkLSv4b3_ymILsz5_a.png"
+            alt=""
+          />
 
           <div className="meta">
             <p><strong>Synonyms:</strong> hustle, flow, joy, stop forward</p>
             <p><strong>Antonyms:</strong> hustle, flow, joy, stop forward</p>
           </div>
 
-          <div className="nav-arrows">
+          <div className="arrows">
             <button>‹</button>
             <button>›</button>
           </div>
         </div>
 
-        <div className="right-panel">
+        <div className="page2-right">
           {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="image-card">
+            <div className="image-box" key={i}>
               <img
                 src="https://ik.imagekit.io/dev24/The_Galactic_Time_Travelers_qOkLSv4b3_ymILsz5_a.png"
                 alt=""
